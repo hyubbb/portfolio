@@ -82,7 +82,7 @@ export const ProjectLists = styled.article`
 
 export const ProjectBox = styled.div`
   position: relative;
-  max-width: 450px;
+  max-width: none;
   height: 300px;
   display: grid;
 
@@ -95,9 +95,6 @@ export const ProjectBox = styled.div`
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
 
-  @media screen and (max-width: 1200px) {
-    max-width: none;
-  }
   img {
     width: 100%;
     height: 100%;
