@@ -9,7 +9,7 @@ export const MainStyle = css`
 
 export const Main = styled.main`
   ${MainStyle};
-  margin-top: 20px;
+  margin-top: 160px;
   box-sizing: border-box;
   width: 100%;
 

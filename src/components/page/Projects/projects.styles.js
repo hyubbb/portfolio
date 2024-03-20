@@ -4,14 +4,15 @@ export const Main = styled.main`
   display: flex;
   min-width: 700px;
   width: 100%;
-  /* min-height: 800px; */
-  margin: 30px auto;
+  /* margin: 30px auto; */
+  margin-top: 150px;
   padding: 20px;
   gap: 30px;
   box-sizing: border-box;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   overflow: hidden;
+
   animation: slideDown 0.8s ease forwards;
 
   @keyframes slideDown {

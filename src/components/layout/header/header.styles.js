@@ -1,31 +1,18 @@
 import styled from "styled-components";
-import { MainStyle } from "../../../components/page/HomePage/homepage.styles";
 
 export const Container = styled.div`
   display: flex;
-  /* background-color: var(--bg-gray); */
 `;
 
 export const Main = styled.main`
-  ${MainStyle};
   display: flex;
-  justify-content: center;
-  top: 50px;
-  /* padding: 20px; */
   position: fixed;
+  width: 100%;
+  top: 50px;
+  justify-content: center;
   z-index: 10;
-  /* height: 100%; */
-  /* &:before {
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(6px);
-    z-index: 1;
-    width: 100%;
-  } */
 `;
+
 export const HeaderNav = styled.header`
   padding: 20px 30px;
   z-index: 11;
@@ -48,7 +35,6 @@ export const HeaderNav = styled.header`
 
     a {
       text-decoration: none;
-      /* color: #fff; */
       color: inherit;
       li {
         cursor: pointer;

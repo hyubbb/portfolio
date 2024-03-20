@@ -1,39 +1,27 @@
-import styled, { css } from "styled-components";
-import { MainStyle } from "../HomePage/homepage.styles";
-import { centerCss } from "../Careers/ad-form/projects.styles";
+import styled from "styled-components";
 
 export const Main = styled.main`
-  ${MainStyle};
+  width: 100%;
+  margin: 0 auto;
   flex-direction: unset;
 `;
 
 export const Section = styled.section`
-  width: 100%;
-
+  flex-direction: column;
   .title {
     text-align: center;
+    font-size: 1.5rem;
   }
 
   .box {
     padding: 20px;
     background-color: #fff;
     border-radius: 20px;
-  }
-
-  h1 {
-    font-size: 2rem;
-    /* text-align: center; */
-  }
-
-  h5 {
-    margin: 10px;
-  }
-
-  .cols {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     font-size: 2.3rem;
+
     .col {
       flex: 1 0;
       h5 {
@@ -45,6 +33,10 @@ export const Section = styled.section`
         font-size: 1.2rem;
       }
     }
+  }
+
+  h5 {
+    margin: 10px;
   }
 `;
 

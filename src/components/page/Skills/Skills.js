@@ -65,39 +65,37 @@ const SkillIcons3 = () => (
   </Box>
 );
 
-const Skills = () => {
+const Skills = ({ className }) => {
   return (
-    <Section>
+    <Section className={className}>
       <div className='title'>
         <h1>SKILL</h1>
       </div>
       <div className='box'>
         {/* <h1>Skills</h1> */}
-        <div className='cols'>
-          <div className='col'>
-            <h5>
-              Strong <br />
-              <span className='subText'>( 익숙한 기술 )</span>
-            </h5>
-            <SkillIcons />
-          </div>
-          <div className='col'>
-            <h5>
-              Knowledgeable
-              <br />
-              <span className='subText'>( 업무에 활용 할 수 있는 기술 )</span>
-            </h5>
+        <div className='col'>
+          <h5>
+            Strong <br />
+            <span className='subText'>( 익숙한 기술 )</span>
+          </h5>
+          <SkillIcons />
+        </div>
+        <div className='col'>
+          <h5>
+            Knowledgeable
+            <br />
+            <span className='subText'>( 업무에 활용 할 수 있는 기술 )</span>
+          </h5>
 
-            <SkillIcons2 />
-          </div>
-          <div className='col'>
-            <h5>
-              Experienced <br />
-              <span className='subText'>( 사용해본적 있는 기술 ) </span>
-            </h5>
+          <SkillIcons2 />
+        </div>
+        <div className='col'>
+          <h5>
+            Experienced <br />
+            <span className='subText'>( 사용해본적 있는 기술 ) </span>
+          </h5>
 
-            <SkillIcons3 />
-          </div>
+          <SkillIcons3 />
         </div>
       </div>
     </Section>

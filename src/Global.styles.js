@@ -3,8 +3,6 @@ import styled, { css, createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 :root {
-  /* --main-color: #717482;
-  --second-color: #767a89; */
   color: #444444;
   --main-color: #4294ff;
   --sub-color: #777777;
@@ -16,15 +14,11 @@ export const GlobalStyle = createGlobalStyle`
 
 html, body{
   height:100%;
-  /* font-family: 'Helvetica Neue', sans-serif; */
-  /* font-family: 'Noto Sans KR','Noto Sans JP', 'Poppins', sans-serif; */
-  
   font-family:'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
- /* background-color: var(--offWhite); */
-
+  overflow-y: hidden;
 
 }
 

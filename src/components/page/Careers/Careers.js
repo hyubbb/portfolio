@@ -9,10 +9,8 @@ import {
 
 import { text } from "../../../assets/text";
 
-// import Vanx from "./company-detail/Vanx";
 import { Vanx, VanxDetail } from "./company-detail/Vanx";
 import { Ub, UbDetail } from "./company-detail/Ub";
-import { NavLink } from "react-router-dom";
 import { Worldsky, WorldskyDetail } from "./company-detail/Worldsky";
 
 const componyBox = {
@@ -59,17 +57,11 @@ const Careers = () => {
   return (
     <>
       <Main className='mainArticle'>
-        {/* <h1 className='title'>| Careers</h1> */}
         <Container>
-          {/* <div className='title'> </div> */}
-          {/* <div style={{ padding: "20px" }}>d</div> */}
           <Companies>
             {companies.map(({ name, tempName, desc, period }, index) => {
               return (
                 <Company
-                  // className={({ isActive }) =>
-                  //   isActive ? "active-item" : "inactive-item"
-                  // }
                   key={index}
                   className={tempName}
                   onClick={() => handler(name, tempName)}
@@ -85,33 +77,12 @@ const Careers = () => {
           </Companies>
           <CompanyCareer>
             <div className='left'>
-              {/* <Vanx /> */}
               {companyDetail && <companyDetail.name />}
             </div>
-            {/* {selectedCompany !== "worldsky" && (
-                )} */}
             <div className='right'>
               {companyDetail && <companyDetail.projects />}
-              {/* <VanxDetail /> */}
             </div>
           </CompanyCareer>
-          {/* <Detail>
-            <div className='left'>left</div>
-            <div className='right'>
-              <ProjectBox>
-                <Inline />
-              </ProjectBox>
-              <ProjectBox>
-                <Overlay />
-              </ProjectBox>
-              <ProjectBox>
-                <Inline type='slide' />
-              </ProjectBox>
-              <ProjectBox>
-                <Overlay type='slide' />
-              </ProjectBox>
-            </div>
-          </Detail> */}
         </Container>
       </Main>
     </>

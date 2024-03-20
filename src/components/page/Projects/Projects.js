@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Aside, List, Main, ProjectBox, ProjectLists } from "./projects.styles";
-import {
-  boardApp,
-  noteApp,
-  pokemonApp,
-  shopApp,
-} from "../../../assets/imgs/logo";
+
 import Lang from "./Lang";
 import { projects1, projects2 } from "./projText";
 
