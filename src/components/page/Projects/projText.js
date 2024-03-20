@@ -2,6 +2,7 @@ import {
   boardApp,
   noteApp,
   pokemonApp,
+  portFolio,
   shopApp,
 } from "../../../assets/imgs/logo";
 
@@ -11,7 +12,7 @@ const projects1 = [
     description: "portfolio",
     lang: ["react", "styled-components", "express"],
     type: "mini",
-    img: { pokemonApp },
+    img: { portFolio },
     color: "#d03ed0",
     siteUrl: "http://3.128.178.255:3001/",
     gitUrl: "https://github.com/hyubbb/portfolio",
