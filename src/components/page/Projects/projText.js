@@ -7,6 +7,16 @@ import {
 
 const projects1 = [
   {
+    title: "portpolio",
+    description: "portfolio",
+    lang: ["react", "styled-components", "express"],
+    type: "mini",
+    img: { pokemonApp },
+    color: "#d03ed0",
+    siteUrl: "http://3.128.178.255:3001/",
+    gitUrl: "https://github.com/hyubbb/portfolio",
+  },
+  {
     title: "pokemon",
     description: "react-pokemon-app",
     lang: ["react", "typescript", "tailwindcss", "firebase", "express"],
