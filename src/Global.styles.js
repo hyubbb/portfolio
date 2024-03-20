@@ -18,7 +18,9 @@ html, body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-y: hidden;
+  &::-webkit-scrollbar {
+      display: none;
+    }
 
 }
 
@@ -39,7 +41,6 @@ mark{
   line-height:0rem;
   padding-bottom: 1rem;
 }
- 
 `;
 
 export const HoverCss = css`

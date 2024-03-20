@@ -53,6 +53,7 @@ const projects2 = [
     type: "clone",
     img: { shopApp },
     color: "#45d059",
+    gitUrl: "https://github.com/hyubbb/react-shop-app",
   },
 ];
 

@@ -60,10 +60,6 @@ const HomePage = () => {
   return (
     <>
       <Main ref={mainRef} className='mainArticle' id='page-wrapper'>
-        {/* <Title>Main Page</Title> */}
-        {/* <Header /> */}
-        {/* <About /> */}
-
         <AboutMe className='page' />
         <Skills className='page' />
         <Contact className='page' />

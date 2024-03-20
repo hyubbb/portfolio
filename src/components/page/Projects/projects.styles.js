@@ -2,9 +2,8 @@ import styled, { css } from "styled-components";
 
 export const Main = styled.main`
   display: flex;
-  min-width: 700px;
   width: 100%;
-  /* margin: 30px auto; */
+  flex-direction: column;
   margin-top: 150px;
   padding: 20px;
   gap: 30px;
@@ -17,23 +16,19 @@ export const Main = styled.main`
 
   @keyframes slideDown {
     0% {
-      /* transform: translateY(-100%); */
       transform: translateY(-5%);
       opacity: 0;
     }
     50% {
-      /* transform: translateYY(-10%); */
     }
     100% {
       transform: translateY(0%);
       opacity: 1;
-      /* transform: translateY(0); */
     }
   }
 
   article {
     flex: 8;
-    /* border: 1px solid #000; */
     height: 100%;
     min-height: 680px;
   }
@@ -45,7 +40,7 @@ export const Aside = styled.aside`
   color: #fff;
   display: flex;
   flex: 2;
-  flex-direction: column;
+  flex-direction: row;
   min-width: 200px;
   gap: 20px;
   padding: 20px 30px;
@@ -66,14 +61,10 @@ export const List = styled.span`
 export const ProjectLists = styled.article`
   .mainBox {
     width: 100%;
-
     display: grid;
     gap: 30px;
     row-gap: 40px;
-    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-    /* grid-template-rows: 200px 200px; */
   }
   h3 {
     margin-top: 5px;
@@ -86,9 +77,6 @@ export const ProjectBox = styled.div`
   height: 300px;
   display: grid;
 
-  /* grid-template-columns: repeat(3, 1fr); */
-
-  //gap:10px/*원하는간격설정*//*flex:10300px*//*max-width:400px*//*border-radius:10px*/
   color: white;
   overflow: hidden;
   background-color: ${(props) => props.color || "white"};
@@ -104,14 +92,11 @@ export const ProjectBox = styled.div`
 
   .title {
     position: absolute;
-    /* justify-content: center; */
-    /* top: 100%; */
     bottom: 0;
     width: 100%;
     height: 90px;
     background-color: ${(props) => props.color || "#3d3d3d"};
     margin-top: 5px;
-    /* border-radius: 5px; */
     padding: 10px;
   }
 
@@ -173,6 +158,5 @@ export const ColorBox = styled.div`
   font-size: 0.9rem;
   text-wrap: nowrap;
   border-radius: 5px;
-  /* background-color: #000; */
   background-color: ${(props) => props.color || "#3d3d3d"};
 `;

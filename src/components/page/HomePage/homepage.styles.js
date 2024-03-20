@@ -4,13 +4,6 @@ export const Main = styled.main`
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-
-  /* display: flex; */
-  /* gap: 60px; */
-  /* flex-direction: column; */
-  /* position: fixed; */
-  /* left: 0; */
-  /* top: 0; */
   overflow-y: auto;
   &#page-wrapper {
     .page {
@@ -82,20 +75,6 @@ export const LeftSectionProfile = styled.section`
   align-items: center;
   border-radius: 40px;
   padding: 1rem;
-  /* animation: slideDown 1s ease-out forwards; */
-
-  /* @keyframes slideDown {
-    0% {
-      transform: translateY(-15%);
-      opacity: 0;
-    }
-    50% {
-    }
-    100% {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-  } */
 
   h2 {
     font-size: 2rem;
@@ -122,8 +101,6 @@ export const RightSectionProfile = styled.section`
   padding: 0 100px;
   margin-top: 70px;
 
-  /* animation: slideUp 1s ease-out forwards; */
-
   @keyframes slideUp {
     from {
       transform: translateY(20%);
@@ -139,8 +116,6 @@ export const RightSectionProfile = styled.section`
   @media screen and (max-width: 900px) {
     padding: 0 20px;
   }
-  /* border: 1px solid red; */
-  /* overflow-y: scroll; */
 `;
 
 export const ImgIcon = styled.img`
@@ -149,7 +124,6 @@ export const ImgIcon = styled.img`
   object-fit: cover;
   border-radius: 50%;
   aspect-ratio: 3/4;
-  /* border: 1px solid black; */
 `;
 
 export const Title = styled.h1`
