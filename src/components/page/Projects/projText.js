@@ -10,7 +10,7 @@ const projects1 = [
   {
     title: "portfolio",
     description: "portfolio",
-    lang: ["react", "styled-components", "express"],
+    lang: ["react", "styled-components", "express", "webpack"],
     type: "mini",
     img: { portfolio },
     color: "#d03ed0",
@@ -64,6 +64,7 @@ const projects2 = [
     type: "clone",
     img: { shopApp },
     color: "#45d059",
+    siteUrl: "https://shop-hyub.netlify.app/",
     gitUrl: "https://github.com/hyubbb/react-shop-app",
   },
 ];

@@ -94,7 +94,6 @@ export const ProjectBox = styled.div`
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 90px;
     background-color: ${(props) => props.color || "#3d3d3d"};
     margin-top: 5px;
     padding: 10px;
@@ -124,7 +123,7 @@ export const ProjectBox = styled.div`
   }
   &:hover {
     transform: scale(1.02);
-    transition: all 0.5s;
+    transition: all 0.3s;
     box-shadow: 0.3rem 0.3rem 0rem rgb(0, 0, 0, 0.8);
 
     /* Apply blur to everything but the hoverMenu */
@@ -151,6 +150,7 @@ export const LangDiv = styled.div`
   display: flex;
   gap: 5px;
   margin-top: 15px;
+  flex-wrap: wrap;
 `;
 
 export const ColorBox = styled.div`

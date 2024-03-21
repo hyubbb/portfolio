@@ -2,9 +2,7 @@ import styled, { css } from "styled-components";
 import { HoverCss } from "../../../Global.styles";
 
 export const MainStyle = css`
-  /* max-width: 1400px; */
   margin: 0 auto;
-  /* justify-content: center; */
 `;
 
 export const Main = styled.main`
@@ -17,17 +15,13 @@ export const Main = styled.main`
 
   @keyframes slideDown {
     0% {
-      /* transform: translateY(-100%); */
       transform: translateY(-5%);
       opacity: 0;
     }
-    50% {
-      /* transform: translateYY(-10%); */
-    }
+
     100% {
       transform: translateY(0%);
       opacity: 1;
-      /* transform: translateY(0); */
     }
   }
 `;
@@ -39,14 +33,6 @@ export const Container = styled.div`
   gap: 20px;
   box-sizing: border-box;
   padding-bottom: 40px;
-
-  /* max-height: 700px; */
-  /* display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  border: 1px dotted black; */
-  /* height: 80%; */ /* justify-content: center; */
-  /* flex-direction: column; */ /* height: 80%; */
   .detail {
     margin: 20px;
     border: 1px solid black;
@@ -56,9 +42,6 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 900px) {
-    /* flex-direction: row;
-    flex: 1;
-    flex-wrap: nowrap; */
     width: 100%;
     flex-direction: column;
   }
@@ -80,7 +63,7 @@ export const Companies = styled.div`
   }
 
   section {
-    height: 200px;
+    width: 100%;
     box-sizing: border-box;
     padding: 20px;
     border-radius: 20px;
@@ -91,15 +74,10 @@ export const Companies = styled.div`
   .title {
     margin: 0;
     padding: 0px;
-    /* font-size: 2rem; */
-    /* display: block; */
-    /* position: relative; */
-    /* box-sizing: border-box; */
   }
 `;
 
 export const Company = styled.section`
-  /* border: 1px solid black; */
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px 0px;
@@ -150,17 +128,13 @@ export const CompanyCareer = styled.div`
   height: 100%;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 6px 1px;
-  /* border: 1px solid black; */
   border-radius: 20px;
 
   .left,
   .right {
     flex: 1 1 400px;
-    /* height: 100%; */
-    /* width: 100%; */
   }
-
-  main {
+  ㄴ main {
     background-color: var(--bg-gray);
     padding: 30px;
     border-radius: 10px;

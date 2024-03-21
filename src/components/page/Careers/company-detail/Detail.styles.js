@@ -81,8 +81,6 @@ export const Box = styled.div`
 
 export const Main = styled.main`
   width: 100%;
-  /* padding: 0 20px; */
-
   display: flex;
   flex-direction: column;
 

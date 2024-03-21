@@ -19,15 +19,11 @@ const Lang = ({ language }) => {
   return (
     <>
       <LangDiv>
-        {language.map((lang, index) =>
-          index < 4 ? (
-            <ColorBox key={index} color={color[lang]}>
-              {lang.replace(/\b[a-z]/, (letter) => letter.toUpperCase())}
-            </ColorBox>
-          ) : (
-            "..."
-          )
-        )}
+        {language.map((lang, index) => (
+          <ColorBox key={index} color={color[lang]}>
+            {lang.replace(/\b[a-z]/, (letter) => letter.toUpperCase())}
+          </ColorBox>
+        ))}
       </LangDiv>
     </>
   );

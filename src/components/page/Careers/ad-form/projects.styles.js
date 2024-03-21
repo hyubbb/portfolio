@@ -26,7 +26,6 @@ export const ProjectBox = styled.div`
 `;
 
 export const InlineAd = styled.div`
-  /* margin: 20px; */
   ${centerCss}
   width: 80%;
   border: 1px solid black;
