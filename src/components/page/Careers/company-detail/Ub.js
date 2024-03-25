@@ -51,7 +51,7 @@ export const Ub = () => {
           <strong>광고 포맷 개발</strong>
         </Sub__MainText>
         <Sub__SubText>
-          월 5000만엔 이상 <strong>매출 추가 달성 가능</strong>
+          월 1억엔 이상 <strong>매출 추가 달성 가능</strong>
         </Sub__SubText>
         <Sub__MainText>회사 홈페이지 및 사내 관리페이지 제작</Sub__MainText>
         <Sub__MainText>
