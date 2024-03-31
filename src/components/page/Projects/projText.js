@@ -48,10 +48,11 @@ const projects1 = [
   {
     title: "Note web",
     description: "react-note-app",
-    lang: ["react", "recoil", "typescript", "styled-components", "expressjs"],
+    lang: ["react", "recoil", "styled-components", "typescript", "expressjs"],
     type: "mini",
     img: { noteApp },
     color: "#55c9ff",
+    siteUrl: "http://3.128.178.255:3100/",
     gitUrl: "https://github.com/hyubbb/react-note-recoil-app",
   },
 ];
