@@ -9,7 +9,7 @@ const Overlay = ({ type }) => {
       <ProjectBox>
         {Divs(20)}
         <OverlayAd className='overlay'>
-          <span className='ad_main'>
+          <span className='overlay_main'>
             {adType !== "slide" ? (
               <span>Overlay</span>
             ) : (

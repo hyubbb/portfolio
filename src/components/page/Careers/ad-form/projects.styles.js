@@ -65,7 +65,7 @@ export const OverlayAd = styled.div`
   animation: ${moveDown} 4s;
   animation-iteration-count: infinite;
 
-  .ad_main {
+  .overlay_main {
     ${centerCss}
     width: 100%;
     height: 70px;
