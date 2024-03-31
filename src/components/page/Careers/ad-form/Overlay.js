@@ -19,7 +19,7 @@ const Overlay = ({ type }) => {
               </>
             )}
           </span>
-          <span className='ad_sub'>Sponsored</span>
+          <span className='overlay_sub'>Sponsored</span>
         </OverlayAd>
       </ProjectBox>
     </>

@@ -82,7 +82,7 @@ export const OverlayAd = styled.div`
     }
   }
 
-  .ad_sub {
+  .overlay_sub {
     ${centerCss}
     width: 100%;
     height: 30px;
