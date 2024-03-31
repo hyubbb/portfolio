@@ -1,6 +1,5 @@
 import React from "react";
-import { Skill } from "../About/about.styles";
-import { Box, Main, Section } from "./skills.styles";
+import { Box, Section } from "./skills.styles";
 import {
   cssIcon,
   htmlIcon,
