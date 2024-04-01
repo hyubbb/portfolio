@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { centerCss } from "../ad-form/projects.styles";
+import { font } from "../../../../Global.styles";
 
 export const Highlight = styled.div`
   display: inline-block;
@@ -8,24 +9,25 @@ export const Highlight = styled.div`
   margin: 15px 0;
   padding: 5px 10px;
   border-radius: 7px;
-  font-size: 1.3rem;
+  font-size: ${font.default};
   font-weight: normal;
 `;
 
 export const SectionTitle = styled.div`
-  font-size: 1.7rem;
+  font-size: ${font.large};
   font-weight: bold;
-  margin: 0px 0 20px 0;
+  margin: 15px 0;
 
   .sub {
-    font-size: 1.3rem;
+    font-size: ${font.default};
+    margin: 10px;
     color: var(--sub-color);
     font-weight: lighter;
   }
 `;
 
 export const SectionText = styled.div`
-  font-size: 1.2rem;
+  font-size: ${font.default};
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -65,7 +67,7 @@ export const Box = styled.div`
   border-radius: 10px;
 
   span {
-    font-size: 1.2rem;
+    font-size: ${font.medium};
     display: inline-block;
     padding: 10px;
     margin: 0 0 20px 0;
@@ -76,6 +78,7 @@ export const Box = styled.div`
   div {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
   }
 `;
 

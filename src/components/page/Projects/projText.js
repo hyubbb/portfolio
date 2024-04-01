@@ -18,6 +18,16 @@ const projects1 = [
     gitUrl: "https://github.com/hyubbb/portfolio",
   },
   {
+    title: "Note web",
+    description: "react-note-app",
+    lang: ["react", "recoil", "styled-components", "typescript", "expressjs"],
+    type: "mini",
+    img: { noteApp },
+    color: "#55c9ff",
+    siteUrl: "http://3.128.178.255:3100/",
+    gitUrl: "https://github.com/hyubbb/react-note-recoil-app",
+  },
+  {
     title: "pokemon",
     description: "react-pokemon-app",
     lang: ["react", "typescript", "tailwindcss", "firebase", "express"],
@@ -44,16 +54,6 @@ const projects1 = [
     color: "#ffc253",
     siteUrl: "http://3.128.178.255:3000/",
     gitUrl: "https://github.com/hyubbb/react-board-app",
-  },
-  {
-    title: "Note web",
-    description: "react-note-app",
-    lang: ["react", "recoil", "styled-components", "typescript", "expressjs"],
-    type: "mini",
-    img: { noteApp },
-    color: "#55c9ff",
-    siteUrl: "http://3.128.178.255:3100/",
-    gitUrl: "https://github.com/hyubbb/react-note-recoil-app",
   },
 ];
 

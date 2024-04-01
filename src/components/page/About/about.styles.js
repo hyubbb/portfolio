@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { HoverCss } from "../../../Global.styles";
+import { font } from "../../../Global.styles";
 
 const Section = css`
   position: relative;
@@ -9,7 +9,7 @@ const Section = css`
 `;
 
 export const RightSectionProfile = styled.section`
-  min-width: 600px;
+  /* min-width: 600px; */
   border-radius: 40px;
   padding: 0 100px;
 
@@ -45,13 +45,13 @@ export const AboutMe = styled.article`
 
 export const Title = styled.h1`
   font-size: 2.5rem;
-  line-height: 2rem;
+  /* line-height: 2rem; */
   font-weight: 300;
 `;
 
 export const Comments = styled.div`
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: ${font.large};
   line-height: 1.6rem;
   font-weight: 300;
 `;

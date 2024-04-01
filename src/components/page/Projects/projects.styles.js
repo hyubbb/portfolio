@@ -1,18 +1,13 @@
 import styled, { css } from "styled-components";
+import { font } from "../../../Global.styles";
 
 export const Main = styled.main`
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin-top: 150px;
-  padding: 20px;
-  gap: 30px;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  overflow: hidden;
-
+  margin-top: 180px;
   animation: slideDown 0.8s ease forwards;
+  h1 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 
   @keyframes slideDown {
     0% {
@@ -26,6 +21,21 @@ export const Main = styled.main`
       opacity: 1;
     }
   }
+  @media screen and (max-width: 480px) {
+    margin-top: 80px;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  overflow: hidden;
 
   article {
     flex: 8;
@@ -39,17 +49,19 @@ export const Aside = styled.aside`
   background-color: #19193b;
   color: #fff;
   display: flex;
-  flex: 2;
   flex-direction: row;
-  min-width: 200px;
   gap: 20px;
   padding: 20px 30px;
-  font-size: 1.3rem;
+  font-size: ${font.medium};
   border-radius: 20px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 export const List = styled.span`
   display: block;
-  font-size: 1.2rem;
   cursor: pointer;
   &::before {
     content: "●";
@@ -112,7 +124,7 @@ export const ProjectBox = styled.div`
     gap: 20px;
     a {
       background-color: #000;
-      font-size: 1rem;
+      font-size: ${font.default};
       letter-spacing: 2px;
       padding: 20px;
       width: 100px;
@@ -155,7 +167,7 @@ export const LangDiv = styled.div`
 
 export const ColorBox = styled.div`
   padding: 5px;
-  font-size: 0.9rem;
+  font-size: ${font.small};
   text-wrap: nowrap;
   border-radius: 5px;
   background-color: ${(props) => props.color || "#3d3d3d"};

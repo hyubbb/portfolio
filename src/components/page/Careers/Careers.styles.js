@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { HoverCss } from "../../../Global.styles";
+import { font } from "../../../Global.styles";
 
 export const MainStyle = css`
   margin: 0 auto;
@@ -24,10 +24,15 @@ export const Main = styled.main`
       opacity: 1;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 80px;
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
+  max-width: 1200px;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
@@ -52,18 +57,11 @@ export const Companies = styled.div`
   flex-direction: column;
   flex: 2;
   gap: 20px;
-  min-width: 200px;
   flex-wrap: wrap;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 900px) {
-    flex-direction: row;
-    flex: 1;
-    flex-wrap: nowrap;
-  }
-
   section {
-    width: 100%;
+    width: 230px;
     box-sizing: border-box;
     padding: 20px;
     border-radius: 20px;
@@ -74,6 +72,18 @@ export const Companies = styled.div`
   .title {
     margin: 0;
     padding: 0px;
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: row;
+    flex: 1;
+    /* flex-wrap: nowrap; */
+    section {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
   }
 `;
 
@@ -99,47 +109,63 @@ export const Company = styled.section`
 
     .name {
       flex-basis: 200px;
-      font-size: 1.5rem;
+      font-size: ${font.large};
       font-weight: bold;
     }
     .period {
-      font-size: 1rem;
+      font-size: ${font.default};
     }
   }
 
   .desc {
-    font-size: 1.1rem;
+    font-size: ${font.default};
     font-style: italic;
     color: #777777;
   }
 
   &.active-item,
   &:hover {
-    ${HoverCss};
+    background-color: var(--bg-gray);
+    border: 0px;
+    color: white;
 
-    .desc {
+    :is(.name, .period, .desc) {
       color: white;
+    }
+  }
+
+  &:not(&.active-item) {
+    color: #9e9e9e;
+  }
+
+  @media screen and (max-width: 480px) {
+    div {
+      .name {
+        flex-basis: 0;
+      }
     }
   }
 `;
 
 export const CompanyCareer = styled.div`
   flex: 7;
+  width: 800px;
   height: 100%;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 6px 1px;
   border-radius: 20px;
 
-  .left,
-  .right {
-    flex: 1 1 400px;
-  }
-  ㄴ main {
+  main {
     background-color: var(--bg-gray);
     padding: 30px;
     border-radius: 10px;
     box-sizing: border-box;
     color: white;
     margin-top: 30px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column;
   }
 `;

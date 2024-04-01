@@ -1,16 +1,18 @@
 import styled from "styled-components";
+import { font } from "../../../Global.styles";
 
 export const Section = styled.section`
   flex-direction: column;
   .title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: ${font.large};
   }
   .box {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 40px;
     margin-bottom: 50px;
@@ -22,7 +24,7 @@ export const Section = styled.section`
       gap: 20px;
       padding: 20px;
       text-align: center;
-      font-size: 1rem;
+      font-size: ${font.default};
       font-weight: 300;
 
       border-radius: 10px;
@@ -40,7 +42,7 @@ export const Section = styled.section`
         gap: 10px;
         font-weight: 800;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: ${font.medium};
         border-bottom: 1px solid #000;
         svg {
           width: 20px;

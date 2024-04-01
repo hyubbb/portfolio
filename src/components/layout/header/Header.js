@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
-import { Container, HeaderNav, Main } from "./header.styles";
+import React, { useEffect, useState } from "react";
+import { Container, HeaderNav, Main, MobileMenu } from "./header.styles";
 import { Link } from "react-router-dom";
-
+import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
 const Header = () => {
+  const [menu, setMenu] = useState(false);
   const headerMenu = ["HOME", "CAREERS", "PROJECTS"];
 
   const handleScroll = () => {
@@ -22,6 +23,7 @@ const Header = () => {
       active.classList.remove("active-menu");
     }
     elm.classList.add("active-menu");
+    setMenu(false);
   };
 
   useEffect(() => {
@@ -32,32 +34,56 @@ const Header = () => {
     if (active) {
       active.classList.add("active-menu");
     }
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <Main>
-      <Container>
-        <HeaderNav className='header'>
-          <ul>
-            {headerMenu.map((menu, index) => {
-              return (
-                <Link
-                  to={menu === "home" ? "/" : `/${menu}`}
-                  key={index}
-                  onClick={() => toggleActive(menu)}
-                >
-                  <li className={menu}>{menu}</li>
-                </Link>
-              );
-            })}
-          </ul>
-        </HeaderNav>
-      </Container>
-    </Main>
+    <>
+      <Main>
+        <div className='w-web'>
+          <HeaderNav className='header'>
+            <ul>
+              {headerMenu.map((menu, index) => {
+                return (
+                  <Link
+                    to={menu === "home" ? "/" : `/${menu}`}
+                    key={index}
+                    onClick={() => toggleActive(menu)}
+                  >
+                    <li className={menu}>{menu}</li>
+                  </Link>
+                );
+              })}
+            </ul>
+          </HeaderNav>
+        </div>
+        <div className='w-mob' onClick={() => setMenu(!menu)}>
+          <IoMenu />
+        </div>
+        {menu && (
+          <MobileMenu>
+            <ul>
+              {headerMenu.map((menu, index) => {
+                return (
+                  <Link
+                    to={menu === "home" ? "/" : `/${menu}`}
+                    key={index}
+                    onClick={() => toggleActive(menu)}
+                  >
+                    <li className={menu}>{menu}</li>
+                  </Link>
+                );
+              })}
+              <li onClick={() => setMenu(!menu)}>
+                <IoCloseCircleOutline />
+              </li>
+            </ul>
+          </MobileMenu>
+        )}
+      </Main>
+    </>
   );
 };
 

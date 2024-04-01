@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { font } from "../../../Global.styles";
 
 export const Main = styled.main`
   width: 100%;
@@ -10,7 +11,7 @@ export const Section = styled.section`
   flex-direction: column;
   .title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: ${font.large};
   }
 
   .box {
@@ -30,7 +31,7 @@ export const Section = styled.section`
       }
       .subText {
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: ${font.medium};
       }
     }
   }

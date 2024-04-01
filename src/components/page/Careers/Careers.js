@@ -13,7 +13,7 @@ import { Vanx, VanxDetail } from "./company-detail/Vanx";
 import { Ub, UbDetail } from "./company-detail/Ub";
 import { Worldsky, WorldskyDetail } from "./company-detail/Worldsky";
 
-const componyBox = {
+const companyBox = {
   vanx: {
     name: Vanx,
     projects: VanxDetail,
@@ -36,7 +36,7 @@ const Careers = () => {
   const handler = (name, tempName) => {
     toggleActive(tempName);
     const companyName = name.toLowerCase().replace(" ", "");
-    const company = componyBox[companyName];
+    const company = companyBox[companyName];
     setSelectedCompany(companyName);
     setCompanyDetail(company);
   };
@@ -57,6 +57,7 @@ const Careers = () => {
   return (
     <>
       <Main className='mainArticle'>
+        <h1 style={{ textAlign: "center" }}>CAREERS</h1>
         <Container>
           <Companies>
             {companies.map(({ name, tempName, desc, period }, index) => {

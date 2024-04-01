@@ -1,14 +1,15 @@
 import styled, { css } from "styled-components";
+import { font } from "../../../Global.styles";
 
 export const Main = styled.main`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0 auto;
   overflow-y: auto;
   &#page-wrapper {
     .page {
+      width: 100vw;
       height: 100vh;
-      width: 100%;
       position: relative;
       align-items: center;
       justify-content: center;
@@ -81,7 +82,7 @@ export const LeftSectionProfile = styled.section`
   }
 
   span {
-    font-size: 1.3rem;
+    font-size: ${font.medium};
     font-weight: bold;
   }
 
@@ -95,7 +96,7 @@ export const LeftSectionProfile = styled.section`
 export const RightSectionProfile = styled.section`
   ${Section};
   flex: 7;
-  min-width: 600px;
+  /* min-width: 600px; */
   border-radius: 40px;
   gap: 30px;
   padding: 0 100px;
@@ -128,13 +129,13 @@ export const ImgIcon = styled.img`
 
 export const Title = styled.h1`
   font-size: 2.5rem;
-  line-height: 2rem;
+  /* line-height: 2rem; */
   font-weight: 300;
 `;
 
 export const Comments = styled.div`
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: ${font.large};
   line-height: 1.6rem;
   font-weight: 300;
 `;
@@ -143,5 +144,5 @@ export const Skill = styled.span`
   background-color: #fff;
   color: red;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: ${font.medium};
 `;
