@@ -26,7 +26,7 @@ export const RightSectionProfile = styled.section`
   }
 
   @media screen and (max-width: 900px) {
-    padding: 40px;
+    padding: 20px;
   }
 `;
 
@@ -47,13 +47,20 @@ export const Title = styled.h1`
   font-size: 2.5rem;
   /* line-height: 2rem; */
   font-weight: 300;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Comments = styled.div`
   display: inline-block;
-  font-size: ${font.large};
   line-height: 1.6rem;
+  font-size: ${font.large};
   font-weight: 300;
+  @media screen and (max-width: 480px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const ScrollIcon = styled.div`
