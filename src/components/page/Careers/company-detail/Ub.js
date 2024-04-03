@@ -59,7 +59,7 @@ export const Ub = () => {
         </Sub__MainText>
         <Sub__MainText>클라이언트 관리 페이지 제작 및 보수</Sub__MainText>
         <Sub__SubText>
-          → 광고 수익 페이지를 기존 표 형태에서 차트 형태로 변경 - 사용자 만족도
+          광고 수익 페이지를 기존 표 형태에서 차트 형태로 변경 - 사용자 만족도
           향상
         </Sub__SubText>
       </SectionText>
