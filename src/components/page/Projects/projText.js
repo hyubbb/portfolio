@@ -52,7 +52,8 @@ const projects1 = [
     type: "mini",
     img: { boardApp },
     color: "#ffc253",
-    siteUrl: "https://web-react-board-app-754g42alujclxiq.sel5.cloudtype.app/",
+    siteUrl:
+      "https://port-0-react-board-app-754g42alujvb2sj.sel5.cloudtype.app/",
     gitUrl: "https://github.com/hyubbb/react-board-app",
   },
 ];
