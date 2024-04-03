@@ -52,21 +52,24 @@ export const Vanx = () => {
         <Sub__SubText>
           6개월간 수익목표 <strong>달성률 100%</strong> 달성
         </Sub__SubText>
-        <Sub__MainText>자사 관리 페이지 구축 및 유지보수</Sub__MainText>
-        <Sub__MainText>
-          클라이언트와의 직접적인 <strong>소통과 응대</strong> 영업사원들에게
-          자사 광고 시스템 교육
-        </Sub__MainText>
-        <Sub__MainText>
-          광고 검증 데모 페이지를 독립적으로 개발하여 영업 팀의{" "}
-          <strong>업무 자립성 강화</strong>
-        </Sub__MainText>
         <Sub__SubText>
-          개발팀의 지원 없이 광고 발신을 가능하게 해{" "}
-          <strong>업무 효율성을 대폭 향상</strong>
+          새로운 포멧이 추가되면서 resize, scroll이벤트에 대한
+          부하발생-쓰로틀링/디바운싱을 사용하여 이벤트를 제어
         </Sub__SubText>
         <Sub__MainText>
-          자사 자체 광고 입찰 단가 관리 시스템에 클라이언트 관리페이지를 담당
+          광고 검증 데모 페이지를 독립적으로 개발하여 영업 팀의 광고 처리
+          자립성을 강화하고, 개발팀의 지원 없이도 빠른 광고 반영을 가능하게 해
+          업무 효율성을 대폭 향상.
+        </Sub__MainText>
+        <Sub__MainText>자사 관리 페이지 구축 및 유지보수</Sub__MainText>
+        <Sub__MainText>
+          영업사원과 클라이언트의 요구사항을 설계하기 위해서 영업 미팅참여.
+        </Sub__MainText>
+        <Sub__MainText>
+          자사 자체 광고 입찰 단가 관리 시스템에 클라이언트 관리페이지를 담당.
+        </Sub__MainText>
+        <Sub__MainText>
+          캘린더로 관리하던 스케쥴링을 협업 툴 트렐로 도입으로 스케쥴 관리 향상.
         </Sub__MainText>
       </SectionText>
       <Box>

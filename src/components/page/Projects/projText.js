@@ -14,7 +14,7 @@ const projects1 = [
     type: "mini",
     img: { portfolio },
     color: "#d03ed0",
-    siteUrl: "http://3.128.178.255:3001/",
+    siteUrl: "https://portfoliohyub.netlify.app/",
     gitUrl: "https://github.com/hyubbb/portfolio",
   },
   {
@@ -24,7 +24,7 @@ const projects1 = [
     type: "mini",
     img: { noteApp },
     color: "#55c9ff",
-    siteUrl: "http://3.128.178.255:3100/",
+    // siteUrl: "http://3.128.178.255:3100/",
     gitUrl: "https://github.com/hyubbb/react-note-recoil-app",
   },
   {
@@ -52,7 +52,7 @@ const projects1 = [
     type: "mini",
     img: { boardApp },
     color: "#ffc253",
-    siteUrl: "http://3.128.178.255:3000/",
+    // siteUrl: "http://3.128.178.255:3000/",
     gitUrl: "https://github.com/hyubbb/react-board-app",
   },
 ];
