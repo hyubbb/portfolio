@@ -7,6 +7,7 @@ console.log(__dirname);
 
 app.get("*", (req, res) => {
   console.log(__dirname);
+  console.log(__dirname);
   res.sendFile(path.resolve(__dirname, "..", "..", "dist", "index.html"));
 });
 
