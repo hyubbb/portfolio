@@ -3,7 +3,10 @@ const path = require("path");
 const app = express();
 
 app.use(express.static(path.join(__dirname, "..", "..", "dist")));
+console.log(__dirname);
+
 app.get("*", (req, res) => {
+  console.log(__dirname);
   res.sendFile(path.resolve(__dirname, "..", "..", "dist", "index.html"));
 });
 

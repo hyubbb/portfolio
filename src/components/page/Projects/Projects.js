@@ -50,9 +50,11 @@ const Projects = () => {
                     <Lang language={project.lang} />
                   </div>
                   <button className='hoverMenu'>
-                    <a href={project.siteUrl} target='__blank'>
-                      site
-                    </a>
+                    {project.siteUrl && (
+                      <a href={project.siteUrl} target='__blank'>
+                        site
+                      </a>
+                    )}
                     <a href={project.gitUrl} target='__blank'>
                       github
                     </a>
