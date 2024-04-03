@@ -24,7 +24,7 @@ const projects1 = [
     type: "mini",
     img: { noteApp },
     color: "#55c9ff",
-    // siteUrl: "http://3.128.178.255:3100/",
+    siteUrl: "https://port-0-note-app-754g42alujclxiq.sel5.cloudtype.app/",
     gitUrl: "https://github.com/hyubbb/react-note-recoil-app",
   },
   {
@@ -52,7 +52,7 @@ const projects1 = [
     type: "mini",
     img: { boardApp },
     color: "#ffc253",
-    // siteUrl: "http://3.128.178.255:3000/",
+    siteUrl: "https://web-react-board-app-754g42alujclxiq.sel5.cloudtype.app/",
     gitUrl: "https://github.com/hyubbb/react-board-app",
   },
 ];
