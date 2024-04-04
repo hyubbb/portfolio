@@ -47,19 +47,19 @@ const SkillIcons2 = () => (
       tooltipText='Styled-Components'
       alt='styledComponents'
     />
+    <ImageWithTooltip src={webpackIcon} tooltipText='Webpack' alt='webpack' />
+    <ImageWithTooltip src={nodeIcon} tooltipText='Node' alt='node' />
   </Box>
 );
 
 const SkillIcons3 = () => (
   <Box>
-    <ImageWithTooltip src={webpackIcon} tooltipText='Webpack' alt='webpack' />
+    <ImageWithTooltip src={vueIcon} tooltipText='Vuejs' alt='vuejs' />
     <ImageWithTooltip
       src={firebaseIcon}
       tooltipText='Firebase'
       alt='firebase'
     />
-    <ImageWithTooltip src={nodeIcon} tooltipText='Node' alt='node' />
-    <ImageWithTooltip src={vueIcon} tooltipText='Vuejs' alt='vuejs' />
     <ImageWithTooltip src={jqueryIcon} tooltipText='Jquery' alt='jquery' />
   </Box>
 );
