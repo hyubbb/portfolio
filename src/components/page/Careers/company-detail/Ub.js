@@ -83,14 +83,6 @@ export const UbDetail = () => {
             <h3>
               {"<"} 인라인 이미지 광고 {">"}
             </h3>
-            <SectionText>
-              <Sub__MainText>
-                웹페이지에 광고를 발신 간단한 텍스트 입력
-              </Sub__MainText>
-              <Sub__MainText>
-                색상지정 클릭시에 광고PR 페이지로 이동
-              </Sub__MainText>
-            </SectionText>
           </div>
 
           <div className='section'>
@@ -98,13 +90,6 @@ export const UbDetail = () => {
             <h3>
               {"<"} 오버레이 이미지 광고 {">"}
             </h3>
-            <SectionText>
-              <Sub__MainText>
-                모바일 용 웹페이지에 스크립트를 부착하여 광고를 발신 간단한
-                텍스트 입력
-              </Sub__MainText>
-              <Sub__MainText>클릭시에 광고PR 페이지로 이동</Sub__MainText>
-            </SectionText>
           </div>
         </SectionAd>
       </Main>
