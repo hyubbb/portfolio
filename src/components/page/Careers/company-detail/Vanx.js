@@ -3,7 +3,6 @@ import {
   Box,
   Highlight,
   Main,
-  ProjectBox,
   SectionAd,
   SectionText,
   SectionTitle,
@@ -99,5 +98,3 @@ export const VanxDetail = () => {
     </>
   );
 };
-
-// export default VanxDetail;

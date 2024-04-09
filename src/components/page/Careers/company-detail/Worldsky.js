@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Highlight,
-  Main,
-  ProjectBox,
-  SectionAd,
-  SectionText,
-  SectionTitle,
-  Sub__MainText,
-  Sub__SubText,
-} from "./Detail.styles";
+import { Box, SectionText, SectionTitle, Sub__MainText } from "./Detail.styles";
 import { mysqlIcon } from "../../../../assets/logo/logo";
 import ImageWithTooltip from "../../../../hooks/ImageWithTooltip";
 
@@ -49,9 +39,3 @@ export const Worldsky = () => {
     </>
   );
 };
-
-export const WorldskyDetail = () => {
-  return <></>;
-};
-
-// export default VanxDetail;
