@@ -65,7 +65,7 @@ export const Comments = styled.div`
 
 export const ScrollIcon = styled.div`
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
 
   .circle-1,
   .circle-2 {

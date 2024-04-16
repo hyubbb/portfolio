@@ -3,7 +3,6 @@ import {
   Box,
   Highlight,
   Main,
-  ProjectBox,
   SectionAd,
   SectionText,
   SectionTitle,
@@ -96,5 +95,3 @@ export const UbDetail = () => {
     </>
   );
 };
-
-// export default VanxDetail;

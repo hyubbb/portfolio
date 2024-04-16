@@ -39,3 +39,5 @@ export const Worldsky = () => {
     </>
   );
 };
+
+export const WorldskyDetail = () => {};

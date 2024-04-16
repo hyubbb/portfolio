@@ -34,8 +34,6 @@ const AboutMe = ({ className }) => {
           />
         </svg>
       </ScrollIcon>
-
-      {/* </Main> */}
     </section>
   );
 };
