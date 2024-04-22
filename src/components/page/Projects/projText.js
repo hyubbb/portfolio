@@ -4,9 +4,20 @@ import {
   pokemonApp,
   portfolio,
   shopApp,
+  movie,
 } from "../../../assets/imgs/logo";
 
 const projects1 = [
+  {
+    title: "movie",
+    description: "movie app",
+    lang: ["next14", "react", "recoil", "typescript", "scss", "firebase"],
+    type: "mini",
+    img: { movie },
+    color: "#d03ed0",
+    siteUrl: "https://nextjs-movies-eight-chi.vercel.app/",
+    gitUrl: "https://github.com/hyubbb/nextjs-learn-app",
+  },
   {
     title: "portfolio",
     description: "portfolio",

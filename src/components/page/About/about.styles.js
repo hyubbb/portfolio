@@ -46,7 +46,7 @@ export const AboutMe = styled.article`
 export const Title = styled.h1`
   font-size: 2.5rem;
   /* line-height: 2rem; */
-  font-weight: 300;
+  font-weight: 700;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
