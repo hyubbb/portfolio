@@ -29,6 +29,7 @@ export const Section = styled.section`
 
       border-radius: 10px;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 6px 1px;
+      min-height: 170px;
 
       &:hover {
         transform: scale(1.02);

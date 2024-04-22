@@ -15,6 +15,8 @@ import nodeIcon from "./node.png";
 import firebaseIcon from "./firebase.png";
 import webpackIcon from "./webpack.png";
 import githubIcon from "./github.png";
+import rnIcon from "./rn.jpg";
+import nextIcon from "./next.jpg";
 export {
   githubIcon,
   vueIcon,
@@ -33,4 +35,6 @@ export {
   nodeIcon,
   firebaseIcon,
   webpackIcon,
+  rnIcon,
+  nextIcon,
 };

@@ -2,43 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Container, HeaderNav, Main, MobileMenu } from "./header.styles";
 import { Link } from "react-router-dom";
 import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
+import useHeaderScroll from "../../../hooks/useHeaderScroll";
 const Header = () => {
-  const [menu, setMenu] = useState(false);
-  const headerMenu = ["HOME", "CAREERS", "PROJECTS"];
-
-  const handleScroll = () => {
-    const elm = document.querySelector(".header");
-    if (window.scrollY > 100) {
-      elm.style.backgroundColor = "#28282847";
-      elm.style.color = "#fff";
-    } else {
-      elm.style.backgroundColor = "#ececec70";
-      elm.style.color = "#000";
-    }
-  };
-  const toggleActive = (menu) => {
-    const elm = document.querySelector(`.${menu}`);
-    const active = document.querySelector(`.active-menu`);
-    if (active) {
-      active.classList.remove("active-menu");
-    }
-    elm.classList.add("active-menu");
-    setMenu(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    const pathName = window.location.pathname.split("/")[1];
-    const tempName = pathName === "" ? "home" : pathName;
-    const active = document.querySelector(`.${tempName}`);
-    if (active) {
-      active.classList.add("active-menu");
-    }
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  const { isOpen, setIsOpen, toggleActive } = useHeaderScroll();
+  // const headerMenu = ["HOME", "CAREERS", "PROJECTS"];
+  const headerMenu = ["HOME", "PROJECTS"];
   return (
     <>
       <Main>
@@ -59,10 +27,10 @@ const Header = () => {
             </ul>
           </HeaderNav>
         </div>
-        <div className='w-mob' onClick={() => setMenu(!menu)}>
+        <div className='w-mob' onClick={() => setIsOpen(!isOpen)}>
           <IoMenu />
         </div>
-        {menu && (
+        {isOpen && (
           <MobileMenu>
             <ul>
               {headerMenu.map((menu, index) => {
@@ -76,7 +44,7 @@ const Header = () => {
                   </Link>
                 );
               })}
-              <li onClick={() => setMenu(!menu)}>
+              <li onClick={() => setIsOpen(!isOpen)}>
                 <IoCloseCircleOutline />
               </li>
             </ul>

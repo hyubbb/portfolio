@@ -40,6 +40,4 @@ export const Worldsky = () => {
   );
 };
 
-export const WorldskyDetail = () => {
-  return <></>;
-};
+export const WorldskyDetail = () => {};

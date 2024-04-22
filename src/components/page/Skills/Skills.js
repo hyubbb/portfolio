@@ -16,6 +16,8 @@ import {
   nodeIcon,
   firebaseIcon,
   webpackIcon,
+  nextIcon,
+  rnIcon,
 } from "../../../assets/logo/logo";
 import ImageWithTooltip from "../../../hooks/ImageWithTooltip";
 
@@ -61,6 +63,12 @@ const SkillIcons3 = () => (
       alt='firebase'
     />
     <ImageWithTooltip src={jqueryIcon} tooltipText='Jquery' alt='jquery' />
+    <ImageWithTooltip src={nextIcon} tooltipText='Nextjs' alt='Nextjs' />
+    <ImageWithTooltip
+      src={rnIcon}
+      tooltipText='React-Native'
+      alt='React-Native'
+    />
   </Box>
 );
 
