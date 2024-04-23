@@ -15,8 +15,8 @@ const projects1 = [
     type: "mini",
     img: { movie },
     color: "#d03ed0",
-    siteUrl: "https://nextjs-movies-eight-chi.vercel.app/",
-    gitUrl: "https://github.com/hyubbb/nextjs-learn-app",
+    siteUrl: "https://next-movie-app-rosy.vercel.app/",
+    gitUrl: "https://github.com/hyubbb/next-movie-app",
   },
   {
     title: "portfolio",

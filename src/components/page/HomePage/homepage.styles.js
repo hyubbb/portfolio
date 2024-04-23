@@ -130,7 +130,7 @@ export const ImgIcon = styled.img`
 export const Title = styled.h1`
   font-size: 2.5rem;
   /* line-height: 2rem; */
-  font-weight: 300;
+  font-weight: 700;
 `;
 
 export const Comments = styled.div`
